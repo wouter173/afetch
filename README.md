@@ -1,3 +1,6 @@
+# Custom version of afetch
+made by me [wouter de bruijn]("https://wouterdb.nl)
+
 <h2 align="center"> afetch </h2>
 
 <h3 align="center"> <img src="img/logo.png"> </h3>

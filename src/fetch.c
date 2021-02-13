@@ -99,11 +99,11 @@ char * lowercase(char * str) {
 }
 
 void blockdraw() {
-	printf("    ");
+	printf("\n");
 	for (int i = 30; i<38; i++){
 		printf("\033[0;%dm%s", i, BLOCKCHAR);
 	}
-	printf("\n    ");
+	printf("\n");
 	for (int i = 30; i<38; i++){
 		printf("\033[1;%dm%s", i, BLOCKCHAR);
 	}
@@ -392,13 +392,13 @@ struct distinfo asciiart() {
 	 else if (strncmp(dist, "macOS", 5) == 0) {
 		/* ascii art author: jgs */
 		info.dcol1 = ""BYELLOW;
-		info.dcol2 = BGREEN   "          .:'   "BYELLOW;
-		info.dcol3 = BGREEN   "      __ :'__   "BYELLOW;
-		info.dcol4 = BYELLOW  "   .'`__`-'__``."BYELLOW;
-		info.dcol5 = BRED     "  :__________.-'"BYELLOW;
-		info.dcol6 = BRED     "  :_________:   "BYELLOW;
-		info.dcol7 = BMAGENTA "   :_________`-;"BYELLOW;
-		info.dcol8 = BBLUE    "    `.__.-.__.' "BYELLOW;
+		info.dcol2 = BGREEN   "          .:'   "BBLUE;
+		info.dcol3 = BGREEN   "      __ :'__   "BBLUE;
+		info.dcol4 = BYELLOW  "   .'`__`-'__``."BBLUE;
+		info.dcol5 = BRED     "  :__________.-'"BBLUE;
+		info.dcol6 = BRED     "  :_________:   "BBLUE;
+		info.dcol7 = BMAGENTA "   :_________`-;"BBLUE;
+		info.dcol8 = BBLUE    "    `.__.-.__.' "BBLUE;
 
 		char *homebrewPath = pipeRead("which brew");
 		if (homebrewPath == NULL || *homebrewPath == '\0')
@@ -455,6 +455,7 @@ char * shell() {
 }
 
 int main(){
+	printf("\n");
 	struct utsname ui;
 	uname(&ui);
 	struct timespec si;

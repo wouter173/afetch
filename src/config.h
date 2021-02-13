@@ -1,13 +1,13 @@
 #define CUSTOMCMD 1
 #define PKGCMD "ps aux | tail -n+1 | wc -l | tr -d ' '"
 //---------------------------------------------------------------------------------------------
-#define LOWERCASE 1
+#define LOWERCASE 0
 //---------------------------------------------------------------------------------------------
-#define SHELLPATH 1
+#define SHELLPATH 0
 //---------------------------------------------------------------------------------------------
-#define BLOCKS 1
-#define BLOCKCHAR " ██"
-	/*
+#define BLOCKS 0
+#define BLOCKCHAR " ●"
+/*
 Block characters are shown inside this comment. If you can't see them, then your current font doesn't support them
 
 	▀ ▁ ▂ ▃ ▄ ▅ ▆ ▇ █ ▉ ▊ ▋ ▌ ▍ ▎ ▏
@@ -15,12 +15,12 @@ Block characters are shown inside this comment. If you can't see them, then your
 	█ ▄ ▀ ●
 	*/
 //---------------------------------------------------------------------------------------------
-#define USERTEXT    "     USER"//
-#define DISROTEXT   "   DISTRO"//
-#define KERNELTEXT  "   KERNEL"//
-#define UPTIMETEXT  "   UPTIME"//
-#define SHELLTEXT   "    SHELL"//
-#define PACKAGETEXT "     PKGS"//
+#define USERTEXT 		"  "
+#define DISROTEXT   "  "
+#define KERNELTEXT 	"  "
+#define UPTIMETEXT  "  "
+#define SHELLTEXT   "  "
+#define PACKAGETEXT "  "
 //---------------------------------------------------------------------------------------------
 #define TEXTCOLOUR WHITE
 //---------------------------------------------------------------------------------------------
