@@ -100,11 +100,8 @@ char * lowercase(char * str) {
 
 void blockdraw() {
 	printf("\n");
-	for (int i = 30; i<38; i++){
+	for (int i = 31; i<38; i++){
 		printf("\033[0;%dm%s", i, BLOCKCHAR);
-	}
-	printf("\n");
-	for (int i = 30; i<38; i++){
 		printf("\033[1;%dm%s", i, BLOCKCHAR);
 	}
 
@@ -492,7 +489,6 @@ int main(){
 	char *pkgString = pipeRead(ascii.getpkg);
 
 	printf("%s \n%s",pkgString, ascii.dcol8);
-	printf("\n");
 	if (BLOCKS == 0) {
 		blockdraw();
 	}

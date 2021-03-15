@@ -3,7 +3,7 @@
 //---------------------------------------------------------------------------------------------
 #define LOWERCASE 0
 //---------------------------------------------------------------------------------------------
-#define SHELLPATH 0
+#define SHELLPATH 1
 //---------------------------------------------------------------------------------------------
 #define BLOCKS 0
 #define BLOCKCHAR " ●"
@@ -15,7 +15,7 @@ Block characters are shown inside this comment. If you can't see them, then your
 	█ ▄ ▀ ●
 	*/
 //---------------------------------------------------------------------------------------------
-#define USERTEXT 		"  "
+#define USERTEXT 	"  "
 #define DISROTEXT   "  "
 #define KERNELTEXT 	"  "
 #define UPTIMETEXT  "  "
@@ -30,16 +30,23 @@ Block characters are shown inside this comment. If you can't see them, then your
 
 //---------------------------------------------------------------------------------------------
 
-#define CUSTOMART 1
+#define CUSTOMART 0
 
-#define COL1 BRED     "\033[1;36m     ___   \n"
-#define COL2 BRED     "\033[1;31m ___\033[1;36m/   \\\033[1;31m___ " //info starts on column 2
-#define COL3 BRED     "\033[1;31m/   \033[1;36m'---'\033[1;31m   \\"
-#define COL4 BRED     "\033[1;31m'--_______--'"
-#define COL5 BRED     "\033[1;33m     / \\     "
-#define COL6 BRED     "\033[1;33m    /   \\    "
-#define COL7 BRED     "\033[1;33m   /     \\   " //info ends on column 7
+#define COL1 BRED     "\033[1;33m "
+#define COL2 BRED     "\033[1;36m    ________                  ____      "
+#define COL3 BRED     "\033[1;31m    / ____/ /___  ____  ____  / __ \\_____" //info starts on column 2
+#define COL4 BRED     "\033[1;31m   / /_  / / __ \\/ __ \\/ __ \\/ / / / ___/"
+#define COL5 BRED     "\033[1;31m  / __/ / / /_/ / /_/ / /_/ / /_/ (__  ) "
+#define COL6 BRED     "\033[1;33m /_/   /_/\\____/ .___/ .___/\\____/____/  "
+#define COL7 BRED     "\033[1;33m              /_/   /_/                  " //info ends on column 7
 #define COL8 BRED     ""
+
+// echo " _       __            __            ____      ";
+// echo "| |     / /___  __  __/ /____  _____/ __ \_____";
+// echo "| | /| / / __ \/ / / / __/ _ \/ ___/ / / / ___/";
+// echo "| |/ |/ / /_/ / /_/ / /_/  __/ /  / /_/ (__  ) ";
+// echo "|__/|__/\____/\__,_/\__/\___/_/   \____/____/  ";
+// echo "                                               ";
 
 
 //---------------------------------------------------------------------------------------------
