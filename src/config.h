@@ -30,7 +30,7 @@ Block characters are shown inside this comment. If you can't see them, then your
 
 //---------------------------------------------------------------------------------------------
 
-#define CUSTOMART 0
+#define CUSTOMART 1
 
 #define COL1 BRED     "\033[1;33m "
 #define COL2 BRED     "\033[1;36m    ________                  ____      "

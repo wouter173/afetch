@@ -172,13 +172,13 @@ struct distinfo asciiart() {
 		info.getpkg = "pacman -Qq | wc -l";
 		break;
 	} else if (strncmp(dist, "Debian GNU/Linux", 16) == 0) {
-		info.dcol1 = BRED"  _____\n";
-		info.dcol2 = BRED" /  __ \\ ";
-		info.dcol3 = BRED"|  /    |";
-		info.dcol4 = BRED"|  \\___- ";
-		info.dcol5 = BRED"-_       ";
-		info.dcol6 = BRED"  --_    ";
-		info.dcol7 = BRED"         ";
+		info.dcol1 = BRED"";
+		info.dcol2 = BWHITE"    ____"BRED"       __   _            "BWHITE"";
+		info.dcol3 = BWHITE"   / __ \\"BRED"___  / /_ (_) ___ _____ ";
+		info.dcol4 = BWHITE"  / / / /"BRED" _ \\/ __ \\/ / __ \\`/ __\\";
+		info.dcol5 = BWHITE" / /_/ /"BRED"  __/ /_/ / / /_/ / / / /";
+		info.dcol6 = BWHITE"/_____/"BRED"\\___/_.___/_/\\__,_/_/ /_/ ";
+		info.dcol7 = BRED"                                 ";
 		info.dcol8 = BRED"";
 		info.getpkg = "dpkg -l | tail -n+6 | wc -l";
 		break;
